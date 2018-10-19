@@ -20,7 +20,7 @@ public class HFInventory {
     public static void main(String[] args) throws IOException, SQLException, InterruptedException {
         
         CSVReader csvReader = new CSVReader();
-        csvReader.generateCSV("\\\\harpo\\temp\\pato\\scans");
+        //csvReader.generateCSV("\\\\harpo\\temp\\pato\\scans");
         
         
         for (String host: hosts){
