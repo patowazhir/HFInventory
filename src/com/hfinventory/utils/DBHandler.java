@@ -15,14 +15,14 @@ public class DBHandler {
     Connection conn = null;
     Statement stmt = null;
 
-    protected void connect() throws SQLException{
+    public void connect() throws SQLException{
         //Open a connection
         System.out.println("Connecting to a selected database...");
         conn = DriverManager.getConnection(connectionUrl);
         System.out.println("Connected database successfully...");
     }
     
-    protected void disconnect(){
+    public void disconnect(){
         try{
               if(stmt!=null)
                  conn.close();
@@ -36,7 +36,7 @@ public class DBHandler {
            }
     }
     
-    protected void addServers(List<Server> Servers) throws SQLException{
+    public void addServers(List<Server> Servers) throws SQLException{
         
         System.out.println("Inserting records into the table...");
         stmt = conn.createStatement();

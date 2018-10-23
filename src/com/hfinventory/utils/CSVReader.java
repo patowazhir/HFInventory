@@ -14,7 +14,7 @@ public class CSVReader {
     private static final char DEFAULT_QUOTE = '"';
     private static final String[] hosts = {"CARSON","CAVETT","COLBERT","FALLON","GRIFFIN","IRV-HVHOSTSA01","KIMMEL","ROSE"};
     
-    protected List<Server> scan (String csvFile) throws FileNotFoundException{
+    public List<Server> scan (String csvFile) throws FileNotFoundException{
         Scanner scanner = new Scanner(new File(csvFile));
         List<Server> result = new ArrayList<>();
         
