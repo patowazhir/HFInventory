@@ -1,2 +1,2 @@
 language: java
-script: src/tests/ScripTest
+jdk: oraclejdk8
